@@ -24,6 +24,7 @@ public class ChefService {
     public void startCookingNow() {
         Thread thread = new Thread(this::startCooking);
         thread.setName("Cook-Thread");
+        thread.setDaemon(true);//make this thread dead if the main thread is over
         thread.start();
     }
     private void startCooking() {

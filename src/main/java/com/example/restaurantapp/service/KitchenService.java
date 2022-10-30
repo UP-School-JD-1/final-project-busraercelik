@@ -49,7 +49,7 @@ public class KitchenService {
                     completedOrder.getCustomer().getFirstName(),
                     completedOrder.getFoods().stream().map(Food::getDescription).collect(Collectors.joining(",")),
                     completedOrder.getBeverages().stream().map(Beverage::getDescription).collect(Collectors.joining(","))));
-            System.out.println(completedOrder);
+            //System.out.println(completedOrder);
         }
     }
 }
